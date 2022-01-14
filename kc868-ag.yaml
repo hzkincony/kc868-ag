@@ -1,0 +1,45 @@
+substitutions:
+  name: kc868-ag
+  ac_model:"mitsubishi"  #adjust to match your AC unit!
+  room_name:"Living Room AC"  #rename your room name
+
+esphome:
+  name: ${name}
+  name_add_mac_suffix: true
+  
+  project:
+    name: kincony.kc868-ag
+    version: "1"
+  
+esp32:
+  board: esp32dev
+
+web_server:
+  port: 80
+
+dashboard_import:
+  package_import_url: github://hzkincony/kc868-ag/kc868-ag.yaml@main
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+
+wifi:
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "KC868-AG Fallback Hotspot"
+
+captive_portal:
+
+# Example configuration entry
+remote_transmitter:
+  pin: GPIO2
+  carrier_duty_percent: 50%
+
+climate:
+  - platform: $ac_model
+    name: $room_name
