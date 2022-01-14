@@ -1,7 +1,7 @@
 substitutions:
   name: kc868-ag
-  ac_model:"mitsubishi"  #adjust to match your AC unit!
-  room_name:"Living Room AC"  #rename your room name
+  ac_model: "mitsubishi"  #adjust to match your AC unit!
+  room_name: "Living Room AC"  #rename your room name
 
 esphome:
   name: ${name}
