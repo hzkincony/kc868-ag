@@ -1,6 +1,14 @@
 # About
 
-KC868-AG Smart Controller for home automation
+# KC868-AG Smart Controller for home automation
+![image](https://www.kincony.com/images/kc868-ag/kc868-ag.jpg)  
+# hardware resource:  
+
+433MHz RF transmit  
+433MHz RF receiver  
+IR sender  
+IR receiver  
+Buzzer  
 
 # Installation
 
